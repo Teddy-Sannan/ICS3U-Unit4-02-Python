@@ -18,14 +18,13 @@ def main():
             while number_as_number > multiplied_number:
                 # process
                 print("x{0}".format(multiplied_number))
-                multiplied_number = multiplied_number + 1
+                multiplied_number += 1
                 total_number = multiplied_number * total_number
 
             print("x{0}".format(number_as_number))
             print("The answer is {0}".format(total_number))
 
         except ValueError:
-            print()
             print("Invalid Input")
             print()
             continue
